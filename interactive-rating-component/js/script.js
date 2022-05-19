@@ -17,7 +17,7 @@ const showThankYouBox = () => {
 
 const selectRating = (e) => {
   const number = e.target.textContent;
-  e.target.class.toggle("active");
+  e.target.classList.toggle("active");
 };
 
 const updateSelected = (number) => {};
