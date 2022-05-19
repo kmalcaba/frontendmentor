@@ -75,6 +75,17 @@ p.text {
   color: hsl(217, 12%, 63%);
   margin: 24px 0;
   cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.number:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.number.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
 }
 
 button.submit {
@@ -88,6 +99,12 @@ button.submit {
   color: hsl(0, 0%, 100%);
   font-size: 16px;
   cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+button.submit:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 p.selection {
