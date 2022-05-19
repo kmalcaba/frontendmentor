@@ -52,7 +52,9 @@ For selecting the numbers, I added a class of `.active` to the selected element,
 
 ### Continued development
 
-There might be an easier way to toggle the active elements, rather than looping through them and checking if it's active, then toggling it. But the solution I made was off the top of my head.
+There might be an easier/more efficient way to toggle the active elements, rather than looping through them and checking if it's active, then toggling it. But the solution I made was off the top of my head.
+
+Also, I could have added a flipping animation on the card upon submission.
 
 ### Useful resources
 
