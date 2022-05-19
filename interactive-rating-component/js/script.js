@@ -5,19 +5,34 @@ window.addEventListener("DOMContentLoaded", () => {
   );
 
   const submitBtn = document.querySelector("button.submit");
-  submitBtn.addEventListener("click", showThankYouBox);
+  submitBtn.addEventListener("click", onSubmit);
 });
 
-const showThankYouBox = () => {
+const onSubmit = () => {
+  const selected = updateSelected();
+  if (selected) showThankYouBox(selected);
+};
+
+const showThankYouBox = (number) => {
   const thankYouBox = document.querySelector(".thank-you");
   const rateBox = document.querySelector(".rate-box");
   rateBox.style.display = "none";
   thankYouBox.style.display = "flex";
+  const selected = document.querySelector(".selected");
+  selected.textContent = number;
 };
 
 const selectRating = (e) => {
-  const number = e.target.textContent;
-  e.target.classList.toggle("active");
+  const number = e.target;
+  const ratingBtns = document.querySelectorAll(".number");
+  ratingBtns.forEach((element) => {
+    if (element.classList.contains("active"))
+      element.classList.toggle("active");
+  });
+  number.classList.toggle("active");
 };
 
-const updateSelected = (number) => {};
+const updateSelected = () => {
+  const selected = document.querySelector(".active");
+  if (selected) return selected.textContent;
+};
