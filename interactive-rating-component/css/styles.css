@@ -27,6 +27,7 @@
 
 .thank-you {
   align-items: center;
+  display: none;
 }
 
 .star,
