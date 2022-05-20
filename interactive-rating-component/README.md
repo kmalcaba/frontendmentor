@@ -56,6 +56,8 @@ There might be an easier/more efficient way to toggle the active elements, rathe
 
 Also, I could have added a flipping animation on the card upon submission.
 
+More things, from feedback on my solution: improving the submit button to be unclickable when no rating is selected, adding hover styling on the submit button, renaming some classes to make more sense, changing font sizes to em/rem instead of pixels. Shoutout to @ToFu96 for the feedback!
+
 ### Useful resources
 
 - [The Odin Project](https://www.theodinproject.com/) - Very useful course to teach you about the fundamentals of web development. I had prior knowledge of HTML, CSS, and JavaScript before this, but the course outline really helps to give you a structure of what you need to learn and projects to apply what you've learned. If not for TOP, I would not have learned Flexbox!
