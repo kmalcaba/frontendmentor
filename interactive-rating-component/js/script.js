@@ -6,11 +6,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const submitBtn = document.querySelector("button.submit");
   submitBtn.addEventListener("click", onSubmit);
+  disableButton(true);
 });
 
 const onSubmit = () => {
   const selected = updateSelected();
   if (selected) showThankYouBox(selected);
+  else disableButton(true);
 };
 
 const showThankYouBox = (number) => {
@@ -30,9 +32,15 @@ const selectRating = (e) => {
       element.classList.toggle("active");
   });
   number.classList.toggle("active");
+  disableButton(false);
 };
 
 const updateSelected = () => {
   const selected = document.querySelector(".active");
   if (selected) return selected.textContent;
+};
+
+const disableButton = (isDisabled) => {
+  const submitBtn = document.querySelector("button.submit");
+  submitBtn.disabled = isDisabled;
 };

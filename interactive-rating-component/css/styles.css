@@ -108,6 +108,13 @@ button.submit:hover {
   color: hsl(25, 97%, 53%);
 }
 
+button.submit:disabled,
+button.submit:disabled:hover {
+  background-color: hsl(25, 45%, 49%);
+  color: hsl(0, 0%, 100%);
+  cursor: default;
+}
+
 p.selection {
   padding: 8px 16px;
   border-radius: 16px;
