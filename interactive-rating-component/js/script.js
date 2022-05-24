@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const ratingBtns = document.querySelectorAll(".number");
+  const ratingBtns = document.querySelectorAll(".rating-btn");
   ratingBtns.forEach((element) =>
     element.addEventListener("click", selectRating)
   );
@@ -24,7 +24,7 @@ const showThankYouBox = (number) => {
 
 const selectRating = (e) => {
   const number = e.target;
-  const ratingBtns = document.querySelectorAll(".number");
+  const ratingBtns = document.querySelectorAll(".rating-btn");
   ratingBtns.forEach((element) => {
     if (element.classList.contains("active"))
       element.classList.toggle("active");

@@ -67,7 +67,7 @@ p.text {
   justify-content: space-between;
 }
 
-.number {
+.rating-btn {
   font-size: 15px;
   padding: 16px 22px;
   background-color: hsl(210, 19%, 18%);
@@ -78,12 +78,12 @@ p.text {
   transition: ease-in-out 200ms;
 }
 
-.number:hover {
+.rating-btn:hover {
   background-color: hsl(216, 12%, 54%);
   color: hsl(0, 0%, 100%);
 }
 
-.number.active {
+.rating-btn.active {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
@@ -123,7 +123,7 @@ p.selection {
     padding: 18px;
   }
 
-  .number {
+  .rating-btn {
     padding: 14px 20px;
   }
 }
