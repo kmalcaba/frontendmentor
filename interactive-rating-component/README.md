@@ -1,9 +1,10 @@
 # Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). 
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -57,6 +58,8 @@ There might be an easier/more efficient way to toggle the active elements, rathe
 Also, I could have added a flipping animation on the card upon submission.
 
 More things, from feedback on my solution: improving the submit button to be unclickable when no rating is selected, adding hover styling on the submit button, renaming some classes to make more sense, changing font sizes to em/rem instead of pixels. Shoutout to @ToFu96 for the feedback!
+
+- As of 23/05/2022 - above feedback has been applied to main branch
 
 ### Useful resources
 
