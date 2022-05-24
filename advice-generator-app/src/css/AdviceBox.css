@@ -1,5 +1,9 @@
 .AdviceBox {
   background-color: hsl(217, 19%, 24%);
-  padding: 2em;
+  padding: 3em;
   border-radius: 1em;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
