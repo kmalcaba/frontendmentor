@@ -102,7 +102,8 @@ button.submit {
   transition: ease-in-out 200ms;
 }
 
-button.submit:active {
+button.submit:active,
+button.submit:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
 }
