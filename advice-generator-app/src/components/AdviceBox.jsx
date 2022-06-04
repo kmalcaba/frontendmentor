@@ -1,7 +1,8 @@
 import "../css/AdviceBox.css";
 import AdviceNumber from "./AdviceNumber";
 import Advice from "./Advice";
-import Divider from "./Divider";
+import { ReactComponent as Divider } from "../img/pattern-divider-desktop.svg";
+import { ReactComponent as DividerMobile } from "../img/pattern-divider-mobile.svg";
 
 const AdviceBox = () => {
   return (
