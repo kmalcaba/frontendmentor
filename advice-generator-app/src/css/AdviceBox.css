@@ -1,4 +1,5 @@
 .AdviceBox {
+  position: relative;
   background-color: var(--dark-grayish-blue);
   padding: 3em;
   border-radius: 1em;

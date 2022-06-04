@@ -1,4 +1,5 @@
 .Dice {
+  position: absolute;
   background-color: var(--neon-green);
   padding: 1.25em;
   border-radius: 100%;
@@ -6,4 +7,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
+  outline: none;
+  bottom: 0;
+  transform: translateY(50%);
 }
