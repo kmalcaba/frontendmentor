@@ -1,5 +1,5 @@
 .AdviceBox {
-  background-color: hsl(217, 19%, 24%);
+  background-color: var(--dark-grayish-blue);
   padding: 3em;
   border-radius: 1em;
   max-width: 500px;

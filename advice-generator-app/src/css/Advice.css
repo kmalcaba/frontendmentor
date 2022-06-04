@@ -1,6 +1,6 @@
 .Advice {
   font-size: 1.75rem;
-  color: hsl(193, 38%, 86%);
+  color: var(--light-cyan);
   margin: 1em 0;
   text-align: center;
 }
