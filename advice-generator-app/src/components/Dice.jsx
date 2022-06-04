@@ -1,9 +1,9 @@
 import "../css/Dice.css";
 import { ReactComponent as DiceSvg } from "../img/icon-dice.svg";
 
-const Dice = () => {
+const Dice = ({ handleClick }) => {
   return (
-    <div className='Dice'>
+    <div className='Dice' onClick={handleClick}>
       <DiceSvg />
     </div>
   );
