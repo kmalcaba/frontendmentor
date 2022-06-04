@@ -11,4 +11,10 @@
   outline: none;
   bottom: 0;
   transform: translateY(50%);
+  transition: ease-in-out 0.3s;
+}
+
+.Dice:hover,
+.Dice:active {
+  box-shadow: 0 0 2em 0.15em var(--neon-green);
 }
