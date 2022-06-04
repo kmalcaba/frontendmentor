@@ -3,7 +3,7 @@ import AdviceNumber from "./AdviceNumber";
 import Advice from "./Advice";
 import Dice from "./Dice";
 import Divider from "./Divider";
-import { useEffect, useState, useCallback } from "react";
+import { useState } from "react";
 
 const AdviceBox = () => {
   const [advice, setAdvice] = useState({
