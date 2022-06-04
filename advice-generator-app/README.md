@@ -16,7 +16,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-![](./screenshot-mobile.png)
+<img src="https://github.com/kmalcaba/frontendmentor/blob/main/advice-generator-app/screenshot-mobile.png" width="375px" >
 
 ### Links
 
