@@ -3,9 +3,9 @@ import AdviceBox from "./components/AdviceBox";
 
 function App() {
   return (
-    <div className='App'>
+    <main className='App'>
       <AdviceBox />
-    </div>
+    </main>
   );
 }
 
