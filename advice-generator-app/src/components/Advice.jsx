@@ -1,7 +1,7 @@
 import "../css/Advice.css";
 
 const Advice = ({ advice }) => {
-  return <h1 className='Advice'>“{advice}”</h1>;
+  return <q className='Advice'>{advice}</q>;
 };
 
 export default Advice;
