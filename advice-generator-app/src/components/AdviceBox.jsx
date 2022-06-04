@@ -8,9 +8,8 @@ import { useEffect, useState } from "react";
 
 const AdviceBox = () => {
   const [advice, setAdvice] = useState({
-    advice:
-      "It is easy to sit up and take notice what's difficult is getting up and taking action.",
-    id: 117,
+    advice: "",
+    id: 0,
   });
 
   useEffect(() => {
