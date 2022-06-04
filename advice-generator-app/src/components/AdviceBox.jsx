@@ -4,7 +4,7 @@ import Advice from "./Advice";
 import Dice from "./Dice";
 import { ReactComponent as Divider } from "../img/pattern-divider-desktop.svg";
 import { ReactComponent as DividerMobile } from "../img/pattern-divider-mobile.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const AdviceBox = () => {
   const [advice, setAdvice] = useState({
@@ -12,16 +12,15 @@ const AdviceBox = () => {
     id: 0,
   });
 
-  useEffect(() => {
-    getAdvice();
-  }, []);
-
-  const getAdvice = async () => {
+  const getAdvice = useCallback(async () => {
     const advice = await fetchAdvice();
 
-    console.log(advice.slip);
     setAdvice(advice.slip);
-  };
+  }, []);
+
+  useEffect(() => {
+    getAdvice();
+  }, [getAdvice]);
 
   const fetchAdvice = async () => {
     const res = await fetch("https://api.adviceslip.com/advice");
