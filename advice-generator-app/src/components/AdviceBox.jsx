@@ -7,18 +7,21 @@ import { ReactComponent as DividerMobile } from "../img/pattern-divider-mobile.s
 import { useEffect, useState } from "react";
 
 const AdviceBox = () => {
-  const [advice, setAdvice] = useState(
-    "It is easy to sit up and take notice what's difficult is getting up and taking action."
-  );
+  const [advice, setAdvice] = useState({
+    advice:
+      "It is easy to sit up and take notice what's difficult is getting up and taking action.",
+    id: 117,
+  });
 
   useEffect(() => {
     getAdvice();
-  });
+  }, []);
 
   const getAdvice = async () => {
     const advice = await fetchAdvice();
 
-    setAdvice(advice.slip.advice);
+    console.log(advice.slip);
+    setAdvice(advice.slip);
   };
 
   const fetchAdvice = async () => {
@@ -30,8 +33,8 @@ const AdviceBox = () => {
 
   return (
     <div className='AdviceBox'>
-      <AdviceNumber />
-      <Advice advice={advice} />
+      <AdviceNumber adviceId={advice.id} />
+      <Advice advice={advice.advice} />
       <Divider />
       <Dice handleClick={getAdvice} />
     </div>
