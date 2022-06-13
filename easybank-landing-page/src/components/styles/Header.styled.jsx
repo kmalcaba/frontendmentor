@@ -4,6 +4,7 @@ import { MainContainer } from "./MainContainer.styled";
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
+  z-index: 99;
 `;
 
 export const HeaderContainer = styled(MainContainer)`
