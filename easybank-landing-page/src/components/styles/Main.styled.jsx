@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MainContainer } from "./MainContainer.styled";
 
 export const StyledMain = styled.main`
   display: flex;
@@ -11,6 +10,13 @@ export const Title = styled.h1`
   margin-top: 180px;
   font-weight: 300;
   font-size: 3rem;
+  color: ${({ theme }) => theme.colors.text_primary};
+`;
+
+export const Heading = styled.h2`
+  margin-top: 7px;
+  font-size: 2rem;
+  font-weight: 300;
   color: ${({ theme }) => theme.colors.text_primary};
 `;
 
