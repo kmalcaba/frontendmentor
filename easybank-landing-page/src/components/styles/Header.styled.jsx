@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { MainContainer } from "./MainContainer.styled";
 
-export const StyledHeader = styled.header``;
+export const StyledHeader = styled.header`
+  background-color: ${({ theme }) => theme.colors.white};
+`;
 
 export const HeaderContainer = styled(MainContainer)`
   display: flex;
