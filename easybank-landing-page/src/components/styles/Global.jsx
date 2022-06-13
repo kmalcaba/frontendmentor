@@ -7,6 +7,8 @@ const GlobalStyles = createGlobalStyle`
   :root {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+  }
+  body {
     margin: 0;
     padding: 0;
   }
