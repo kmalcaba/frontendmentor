@@ -22,7 +22,7 @@ export const Intro = styled.div`
 
 export const Title = styled.h1`
   margin-top: 180px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-weight: 300;
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.text_primary};
@@ -30,18 +30,20 @@ export const Title = styled.h1`
 
 export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.text_secondary};
+  line-height: 1.5rem;
+  margin: 30px 0;
 `;
 
 export const BgContainer = styled.div`
   position: relative;
   background-image: url(./images/bg-intro-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 0% 50%;
+  background-position: 10% 50%;
   flex: 1;
 `;
 
 export const Image = styled.img`
-  transform: translateY(-12%) translateX(20%);
+  transform: translateY(-12%) translateX(18%);
   position: absolute;
   right: 0;
 `;
