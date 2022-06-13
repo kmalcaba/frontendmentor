@@ -22,7 +22,6 @@ export const Intro = styled.div`
 
 export const Title = styled.h1`
   margin-top: 180px;
-  /* margin-bottom: 30px; */
   font-weight: 300;
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.text_primary};
