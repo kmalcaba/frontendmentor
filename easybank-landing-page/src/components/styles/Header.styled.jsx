@@ -9,7 +9,7 @@ export const HeaderContainer = styled(MainContainer)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 18px 0;
 `;
 
 export const NavGroup = styled.nav`
@@ -20,6 +20,9 @@ export const NavGroup = styled.nav`
 
 export const NavButton = styled.li`
   list-style: none;
-  padding: 0 20px;
+  padding: 0 15px;
   cursor: pointer;
+  color: ${({ theme }) => theme.colors.text_secondary};
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.8rem;
 `;

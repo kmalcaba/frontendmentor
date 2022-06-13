@@ -11,7 +11,6 @@ const Header = () => {
     <StyledHeader>
       <HeaderContainer>
         <img src='./images/logo.svg' alt='' />
-        {/* <Logo src='./images/logo.svg' alt='' /> */}
         <NavGroup>
           <NavButton>Home</NavButton>
           <NavButton>About</NavButton>
