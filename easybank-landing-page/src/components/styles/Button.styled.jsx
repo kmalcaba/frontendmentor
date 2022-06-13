@@ -7,7 +7,7 @@ export const Button = styled.button`
   border-radius: 50px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   background: linear-gradient(
     90deg,
     ${({ theme }) => theme.colors.accent_primary} 0%,
