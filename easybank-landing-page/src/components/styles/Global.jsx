@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    background-color: ${({ theme }) => theme.colors.bg_primary}
   }
 `;
 
