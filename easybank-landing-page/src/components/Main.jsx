@@ -7,6 +7,7 @@ import {
   Image,
   BgContainer,
 } from "./styles/Main.styled";
+import { Button } from "./styles/Button.styled";
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </Paragraph>
+          <Button>Request Invite</Button>
         </Intro>
         <BgContainer>
           <Image src='./images/image-mockups.png' alt='' />
