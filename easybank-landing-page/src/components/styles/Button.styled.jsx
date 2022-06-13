@@ -14,4 +14,10 @@ export const Button = styled.button`
     ${({ theme }) => theme.colors.accent_secondary} 100%
   );
   color: ${({ theme }) => theme.colors.white};
+  transition: ease-in-out 0.2s;
+
+  &:hover,
+  :active {
+    opacity: 0.6;
+  }
 `;
