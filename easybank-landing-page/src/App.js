@@ -1,13 +1,18 @@
+import GlobalStyles from "./components/styles/Global";
+import { FlexContainer } from "./components/styles/FlexContainer.styled";
 import Header from "./components/Header";
-import MainContainer from "./components/MainContainer";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Header />
-      <MainContainer />
-      <Footer />
+      <GlobalStyles />
+      <FlexContainer direction='column'>
+        <Header />
+        <Main />
+        <Footer />
+      </FlexContainer>
     </>
   );
 }
