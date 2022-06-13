@@ -20,13 +20,13 @@ export const NavGroup = styled.nav`
 
 export const NavButton = styled.li`
   list-style: none;
-  padding: 27px 0 28px 0;
+  padding: 28px 0 29px 0;
   margin: 0 15px;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.text_secondary};
   border-bottom: 4px solid transparent;
   transition: ease-in-out 0.2s;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   &:hover {
     border-bottom: 4px solid ${({ theme }) => theme.colors.accent_primary};
   }
