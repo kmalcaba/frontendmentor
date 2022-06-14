@@ -29,6 +29,7 @@ export const NavButton = styled.li`
   transition: ease-in-out 0.2s;
   font-size: 0.88rem;
   &:hover {
+    color: ${({ theme }) => theme.colors.text_primary};
     border-bottom: 4px solid ${({ theme }) => theme.colors.accent_primary};
   }
 `;
