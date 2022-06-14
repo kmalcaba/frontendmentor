@@ -10,6 +10,8 @@ export const StyledFeatureCard = styled.div`
 export const Heading = styled.h3`
   font-weight: 300;
   font-size: 1.25rem;
+  margin-top: 45px;
+  margin-bottom: 30px;
 `;
 
 export const Description = styled(Paragraph)`
