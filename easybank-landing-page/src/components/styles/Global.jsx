@@ -15,6 +15,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.bg_primary};
     color: ${({ theme }) => theme.colors.text_primary}
   }
+
+  p {
+    color: ${({ theme }) => theme.colors.text_secondary}
+  }
 `;
 
 export default GlobalStyles;
