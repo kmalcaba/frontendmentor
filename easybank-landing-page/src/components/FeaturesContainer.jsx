@@ -4,7 +4,8 @@ import {
   StyledFeaturesContainer,
 } from "./styles/FeaturesContainer.styled";
 import { FlexContainer } from "./styles/FlexContainer.styled";
-import content from "./content";
+import content from "../content";
+import FeatureCard from "./FeatureCard";
 
 const FeaturesContainer = () => {
   return (
@@ -19,11 +20,7 @@ const FeaturesContainer = () => {
         </Paragraph>
         <FlexContainer>
           {content.map((item) => (
-            <div key={item.id}>
-              <img src={`./images/${item.image}`} alt='' />
-              <h3>{item.title}</h3>
-              <p>{item.body}</p>
-            </div>
+            <FeatureCard key={item.id} item={item} />
           ))}
         </FlexContainer>
       </Features>
