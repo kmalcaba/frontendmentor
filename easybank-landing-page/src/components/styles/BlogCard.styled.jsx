@@ -28,6 +28,8 @@ export const Author = styled.p`
 export const Title = styled.h4`
   font-weight: 300;
   margin: 12px 0;
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
 `;
 
 export const Description = styled(Paragraph)`
