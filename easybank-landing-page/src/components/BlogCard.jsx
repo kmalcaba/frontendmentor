@@ -13,7 +13,9 @@ const BlogCard = ({ item: { title, author, body, image } }) => {
       <Image src={`./images/${image}`} alt='' />
       <Blog>
         <Author>By {author}</Author>
-        <Title>{title}</Title>
+        <Title>
+          <a href='/'>{title}</a>
+        </Title>
         <Description>{body}</Description>
       </Blog>
     </StyledBlogCard>

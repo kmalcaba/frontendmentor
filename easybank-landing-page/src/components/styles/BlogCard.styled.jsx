@@ -30,6 +30,16 @@ export const Title = styled.h4`
   margin: 12px 0;
   font-size: 0.9rem;
   letter-spacing: -0.5px;
+
+  & > a {
+    text-decoration: none;
+    color: inherit;
+    transition: ease-in-out 0.2s;
+  }
+
+  & > a:hover {
+    color: ${({ theme }) => theme.colors.accent_primary};
+  }
 `;
 
 export const Description = styled(Paragraph)`
