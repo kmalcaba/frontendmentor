@@ -4,8 +4,9 @@ import { Paragraph } from "./Main.styled";
 export const StyledBlogCard = styled.div`
   max-width: 255px;
   margin: 28px 30px 0 0;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.white};
+  overflow: hidden;
 `;
 
 export const Image = styled.img`
