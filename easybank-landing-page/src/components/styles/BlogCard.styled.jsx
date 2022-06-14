@@ -8,6 +8,12 @@ export const StyledBlogCard = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
+export const Image = styled.img`
+  object-fit: cover; /* incompatible with IE */
+  width: 100%;
+  height: 200px;
+`;
+
 export const Blog = styled.div`
   padding: 30px 25px 25px 25px;
 `;
@@ -27,4 +33,8 @@ export const Description = styled(Paragraph)`
   font-size: 0.72rem;
   line-height: 1rem;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 `;
