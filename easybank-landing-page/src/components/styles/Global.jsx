@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
   }
   body {
     margin: 0;
