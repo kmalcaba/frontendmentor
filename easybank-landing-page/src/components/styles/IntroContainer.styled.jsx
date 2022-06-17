@@ -1,29 +1,30 @@
 import styled from "styled-components";
 import { MainContainer } from "./MainContainer.styled";
 
-export const StyledIntroContainer = styled(MainContainer)`
-  display: flex;
-  height: 655px;
-  padding-right: 0;
-  justify-content: space-around;
+export const StyledIntroContainer = styled.div`
+  padding: 0;
+  height: 730px;
+  margin: 0;
+  width: 100%;
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 460px minmax(100px, 1fr) 740px;
+  justify-items: end;
 `;
 
 export const Intro = styled.div`
-  flex: 1 0 auto;
   max-width: 460px;
-  margin-right: 100px;
+  padding: 170px 0;
 `;
 
 export const BgContainer = styled.div`
-  position: relative;
   background-image: url(./images/bg-intro-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: 10% 50%;
-  flex: 1;
+  grid-column: 4 / 5;
 `;
 
 export const Image = styled.img`
-  transform: translateY(-12%) translateX(18%);
-  position: absolute;
-  right: 0;
+  transform: translateX(20%) translateY(-10%);
+  grid-column: 4 / 5;
 `;

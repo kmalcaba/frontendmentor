@@ -7,9 +7,9 @@ export const StyledMain = styled.main`
 `;
 
 export const Title = styled.h1`
-  margin-top: 180px;
   font-weight: 300;
   font-size: 3rem;
+  margin: 0;
 `;
 
 export const Heading = styled.h2`
